@@ -7,6 +7,7 @@ class Helpers
 
   def self.is_logged_in?(session)
     value = session.include?(:user_id)
+    value
   end
-  
+
 end
