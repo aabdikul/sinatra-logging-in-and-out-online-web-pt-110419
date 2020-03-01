@@ -6,7 +6,12 @@ class Helpers
   end
 
   def is_logged_in?(session)
-    @value = session.include?(:user_id) 
+    @value = session.include?(:user_id)
+    if @value == nil
+      return false
+    else
+      return true
+    end
   end
 
 end
