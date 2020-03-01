@@ -7,6 +7,7 @@
   </head>
   <body id="page-top">
     <%=Helpers.current_user(@session).username%>
-
+    <%if Helpers.is_logged_in?(@session) == true%>
+    <%=Helpers.current_user(@session).balance%>
   </body>
 </html>
