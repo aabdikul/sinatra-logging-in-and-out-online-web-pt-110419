@@ -7,7 +7,7 @@ class Helpers
 
   def self.is_logged_in?(session)
     value = session.include?(:user_id)
-    if value == nil
+    if value 
       return false
     else
       return true
