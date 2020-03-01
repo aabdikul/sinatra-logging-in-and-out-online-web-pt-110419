@@ -11,6 +11,7 @@ class Helpers
       return false
     else
       return true
+      binding.pry
     end
   end
 
