@@ -10,6 +10,6 @@
     <%if Helpers.is_logged_in?(@session) == true%>
     <%=Helpers.current_user(@session).balance%>
     <%end%>
-    <a href = '/sessions/logout'>Log Out</a>
+    <a href = '/logout'>Log Out</a>
   </body>
 </html>
