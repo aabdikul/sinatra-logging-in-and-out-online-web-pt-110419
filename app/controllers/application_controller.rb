@@ -21,6 +21,7 @@ class ApplicationController < Sinatra::Base
 
   get '/account' do
     @session = session
+    binding.pry
     erb :account
   end
 
