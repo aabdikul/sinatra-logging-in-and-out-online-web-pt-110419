@@ -8,7 +8,7 @@
   <body id="page-top">
     Welcome <%=Helpers.current_user(@session).username%>
     <%if Helpers.is_logged_in?(@session) == true%>
-    <%=Helpers.current_user(@session).balance%>
+    Your Balance: <%=Helpers.current_user(@session).balance%>
     <%end%>
     <a href = '/logout'>Log Out</a>
   </body>
