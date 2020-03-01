@@ -6,7 +6,7 @@ class Helpers
   end
 
   def self.is_logged_in?(session)
-    value = session.has_key?(:user_id)
+    value = session.include?(:user_id)
     if value == nil
       return false
     else
